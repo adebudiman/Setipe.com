@@ -1,0 +1,227 @@
+/*  Story Landing Page
+    Setipe.com
+    February 11, 2015
+    by Ade Budiman
+*/
+
+body .navbar {
+    color: #ffffff;
+}
+body nav.navbar-inverse {
+    background-color: #000000;
+}
+nav.navbar .text-center,
+nav.navbar .language {
+    padding: 15px 15px;
+}
+nav.navbar .language {
+    color: #777;
+}
+nav.navbar {
+   border-bottom: 2px solid #72383b; 
+}
+section.benefits .container,
+section.benefits-second .container,
+section.step_01 .container,
+section.step_02 .container{
+    width: auto;
+    max-width: 780px;
+    padding: 0 15px;
+}
+.btn.btn-purple {
+    background-color: #853e78;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 13px 30px;
+}
+.btn.btn-purple:hover {
+    color: #ffffff;
+    background-color: #762567;
+}
+
+/* Header */
+    section.header {
+        margin-top: 40px;
+        padding-top: 50px;
+        background: #000 url("../img/backgrounds/header-bg-sunset.png") no-repeat;
+        height: 500px;
+    }
+    section.header h1,
+    section.header h4 {
+        color: #ffffff;
+        text-align: center;
+    }
+    section.header h1 {
+        padding: 10px;
+        font-weight: 300;
+    }
+    section.header h4,
+    section.header h4 a {
+        color: #7f7e7d;
+        font-family: inherit;
+        font-weight: 300;
+    }
+    section.header h4 a:hover {
+        color: #f16786;
+    }
+    strong.clr1 {
+        color: #f16786;
+    }
+    strong.clr2 {
+        color: #2ab4d9;
+    }
+    div.video {
+        margin: 50px 0px 0px 0px;
+        text-align: center;
+    }
+    img.video-thumbnail {
+        border-radius: 5px;
+        box-shadow: #000 0px 2px 40px;
+        display: inline;
+    }
+    a p {
+        opacity: 0.5;
+        text-align: center;
+        margin: 65px 0px;
+        display: inline-block;
+    }
+    a:hover p {
+        opacity: 0.8;
+    }
+    a p img.play-video {
+        position: absolute;
+        left: 47%;
+    }
+    div.video a {
+        text-align: center;
+    }
+
+@media (min-width: 768px) {
+    .video .modal-dialog {
+        width: 75%;
+        margin: 30px auto;
+    }
+}
+
+/* Benefits */
+    section.benefits {
+        background: #853e78;
+        min-height: 300px;
+        padding-top: 160px;
+        color: #fff;
+    }
+    section.benefits h2 {
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    section.benefits .container ul.list-unstyled li {
+        margin: 15px 0px;
+        font-weight: 300;
+    }
+    section.benefits .container ul.list-unstyled li a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
+    div.dotted {
+        width: 100%;
+        height: 3px;
+        background: url("../img/graphics/dotted-line.png") repeat-x;
+        display: inline-block;
+        margin: 50px 0px 25px 0px;
+    }
+    .video .modal-body {
+        padding: 0px;
+    }
+    .video .modal-content {
+        background: transparent;
+        box-shadow: none;
+        border: none;
+    }
+
+/* Benefits list */
+    section.benefits-second {
+        background: #ffffff;
+        padding: 50px 0px;
+    }
+    div.benefit-list {
+        border-bottom: 1px solid #e8e8e8;
+        display: inline-block;
+        width: 100%;
+        padding: 25px 10px;
+    }
+    div.call-action {
+        font-size: 16px;
+        margin: 45px;
+    } 
+
+/* Tips */
+    section.tips {
+        background: #f16786;
+        padding: 50px 0px 0px 0px;
+        color: #ffffff;
+        text-align: center;
+        font-weight: 300;
+    }
+    section.tips img.img-responsive {
+        display: inline;
+        margin: 30px 0px;
+    } 
+    section.tips .scroll {
+        width: 100%;
+        padding: 30px 0px;
+        margin-top: 50px;
+        text-align: center;
+        background-color: #ec5376;
+    }
+    @-webkit-keyframes 'blink' {
+        0% {
+            opacity:1;
+        }
+        50% {
+            opacity:0.2;
+        }
+        100% {
+            opacity:1;
+        }
+    }
+    .mouse-spin {
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+
+        -webkit-animation-direction: normal;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-name: blink;
+        -webkit-animation-timing-function: ease-in-out;   
+    }
+
+/* Step */
+    section.step {
+        background: url("../img/backgrounds/black-dotted.png") repeat-x;
+        color: #fff;
+        padding: 20px 20px;
+        text-align: center;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+/* Step 01 */
+    section.step_01 {
+        color: #fff;
+        background-color: #2ab4d9;
+        padding: 50px 20px;
+    }
+
+/* Step 02 */
+    section.step_02 {
+        color: #fff;
+        background-color: #f16786;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    
