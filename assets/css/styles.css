@@ -49,7 +49,15 @@ section.tl_01 .container {
 .hideme {
     opacity:0;
 }
-
+.fixed div.title:first-child{
+    position:fixed;
+    top:50px;
+    z-index: 1000;
+    width: 100%;
+}
+.title h2 {
+    margin: 10px;
+}
 /* Responsive */
 @media (min-width: 320px) {
     .video .modal-dialog {
@@ -72,7 +80,7 @@ section.tl_01 .container {
         font-size: 14px;
     }
     section.step h2 {
-        font-size: 25px;
+        font-size: 15px;
     }
     .btn.btn-purple {
         display: block;
@@ -99,6 +107,16 @@ section.tl_01 .container {
         margin: 20% 10px;
         color: #ec5376;
     }
+    .cd-timeline-block .cd-timeline-img h3 {
+        font-size: 14px;
+        margin: 13px 12px;
+    }
+    .cd-timeline-content.clear-out h4.text-right,
+    .cd-timeline-content.clear-out h4.text-left,
+    .cd-timeline-content.clear-out p.text-right, 
+    .cd-timeline-content.clear-out p.text-left {
+        text-align: left;
+    }
 }
 @media (min-width: 420px) {
     .video .modal-dialog {
@@ -121,7 +139,7 @@ section.tl_01 .container {
         font-size: 14px;
     }
     section.step h2 {
-        font-size: 25px;
+        font-size: 15px;
     }
     .btn.btn-purple {
         display: block;
@@ -147,6 +165,16 @@ section.tl_01 .container {
         font-size: 20px;
         margin: 20% 10px;
         color: #ec5376;
+    }
+    .cd-timeline-block .cd-timeline-img h3 {
+        font-size: 14px;
+        margin: 13px 12px;
+    }
+    .cd-timeline-content.clear-out h4.text-right,
+    .cd-timeline-content.clear-out h4.text-left,
+    .cd-timeline-content.clear-out p.text-right, 
+    .cd-timeline-content.clear-out p.text-left {
+        text-align: left;
     }
 }
 @media (min-width: 768px) {
@@ -194,6 +222,16 @@ section.tl_01 .container {
         margin: 20% 10px;
         color: #ec5376;
     }
+    .cd-timeline-block .cd-timeline-img h3 {
+        font-size: 14px;
+        margin: 13px 12px;
+    }
+    .cd-timeline-content.clear-out h4.text-right,
+    .cd-timeline-content.clear-out h4.text-left,
+    .cd-timeline-content.clear-out p.text-right, 
+    .cd-timeline-content.clear-out p.text-left {
+        text-align: left;
+    }
 }
 @media (min-width: 992px) {
     .video .modal-dialog {
@@ -239,6 +277,16 @@ section.tl_01 .container {
         font-size: 20px;
         margin: 20% 10px;
         color: #ec5376;
+    }
+    .cd-timeline-block .cd-timeline-img h3 {
+        font-size: 14px;
+        margin: 13px 12px;
+    }
+    .cd-timeline-content.clear-out h4.text-right,
+    .cd-timeline-content.clear-out h4.text-left,
+    .cd-timeline-content.clear-out p.text-right, 
+    .cd-timeline-content.clear-out p.text-left {
+        text-align: left;
     }
 }
 @media (min-width: 1200px) {
@@ -288,6 +336,18 @@ section.tl_01 .container {
     }
     #cd-timeline {
         padding: 2em 75px;
+    }
+    .cd-timeline-block .cd-timeline-img h3 {
+        font-size: 24px;
+        margin: 15px 12px;
+    }
+    .cd-timeline-content.clear-out h4.text-left,
+    .cd-timeline-content.clear-out p.text-left {
+        text-align: left;
+    }
+    .cd-timeline-content.clear-out h4.text-right,
+    .cd-timeline-content.clear-out p.text-right {
+        text-align: right;
     }
 }
 
@@ -452,10 +512,10 @@ section.tl_01 .container {
     }
 
 /* Step */
-    section.step {
+    section div.title {
         background: url("../img/backgrounds/black-dotted.png") repeat-x;
         color: #fff;
-        padding: 20px 20px;
+        padding: 10px 20px;
         text-align: center;
         font-weight: 300;
         font-style: italic;
@@ -590,16 +650,16 @@ Modules - reusable parts of our design
 
 -------------------------------- */
 .cd-container {
-  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 90%;
-  max-width: 1170px;
-  margin: 0 auto;
+    /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .cd-container::after {
-  /* clearfix */
-  content: '';
-  display: table;
-  clear: both;
+    /* clearfix */
+    content: '';
+    display: table;
+    clear: both;
 }
 
 /* -------------------------------- 
@@ -608,18 +668,18 @@ Main components
 
 -------------------------------- */
 header {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  background: #303e49;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background: #303e49;
 }
 header h1 {
-  color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
+    color: white;
+    font-size: 18px;
+    font-size: 1.125rem;
 }
 @media only screen and (min-width: 1170px) {
-  header {
+    header {
     height: 300px;
     line-height: 300px;
   }
@@ -629,20 +689,31 @@ header h1 {
   }
 }
 
+.cd-timeline-img h3 {
+    color: #fff;
+}
+
+.cd-timeline-content.clear-out {
+    background: transparent;
+    padding: 0px;
+}
+
+
+
 #cd-timeline {
-  position: relative;
-  margin-top: 2em;
-  margin-bottom: 2em;
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 #cd-timeline::before {
-  /* this is the vertical line */
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 18px;
-  height: 100%;
-  width: 4px;
-  background: url(../img/graphics/dotted-timeline.png) repeat-y;
+    /* this is the vertical line */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: url(../img/graphics/dotted-timeline.png) repeat-y;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -656,19 +727,19 @@ header h1 {
 }
 
 .cd-timeline-block {
-  position: relative;
-  margin: 2em 0;
+    position: relative;
+    margin: 2em 0;
 }
 .cd-timeline-block:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 .cd-timeline-block:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 .cd-timeline-block:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-block {
@@ -684,31 +755,31 @@ header h1 {
 
 .cd-timeline-img {
     background-color: #333;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }
 .cd-timeline-img img {
-  display: block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  margin-left: -12px;
-  margin-top: -12px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -12px;
 }
 .cd-timeline-img.cd-picture {
-  background: #75ce66;
+    background: #75ce66;
 }
 .cd-timeline-img.cd-movie {
-  background: #c03b44;
+    background: #c03b44;
 }
 .cd-timeline-img.cd-location {
-  background: #f0ca45;
+    background: #f0ca45;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
