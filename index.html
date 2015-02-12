@@ -1,12 +1,14 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en-US" class="no-js">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Setipe: story landing page</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    
+    <script src="assets/js/modernizr.js"></script>
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -21,18 +23,24 @@
                     <a class="navbar-brand show-xs hidden-sm hidden-md hidden-lg" href="#">
                         <img class="" src="assets/img/logo-xs.png" width="" height=""/>
                     </a>
+                    <div class="navbar-left text-center"><strong>Healty Relationshiops.</strong> For Indonesia</div>
                 </div>
-                <div class="navbar-left text-center"><strong>Healty Relationshiops.</strong> For Indonesia</div>
-                <div class="navbar-right language hidden-xs">
-                    <small><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Language</small>
-                </div> 
+                <ul class="nav navbar-nav navbar-right language hidden-xs">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><small><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Language</small></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Indonesia</a></li>
+                        <li><a href="#">English</a></li>
+                      </ul>
+                    </li>
+                  </ul>
             </div>
         </nav>
         
         <section class="header">
             <div class="container">
                 <h1>
-                    Finding the right <strong class="clr1">life partner</strong> to accompany us <br/> in this journey can boost your level of <strong class="clr2">happiness</strong>
+                    Finding the right <strong class="clr1">life partner</strong> to accompany us in this journey can boost your level of <strong class="clr2">happiness</strong>
                 </h1>
                 <h4>
                     <i>ready to meet your ideal partner ? <a href="http://setipe.com/homepage" target="_blank"><u>get started now</u></a></i>
@@ -46,7 +54,7 @@
         </section>
         
         <section class="benefits">
-            <div class="container">
+            <div class="container hideme">
                 <h2>
                     What are <strong><u>the benefits</u></strong> of a healthy loving relationship ?
                 </h2>
@@ -73,7 +81,7 @@
         </section>
         
         <section class="benefits-second">
-            <div class="container">
+            <div class="container hideme">
                 <div class="benefit-list">
                     <div class="col-md-2 col-sm-2 col-xs-2">
                         <img src="assets/img/graphics/love.png" class="img-responsive"/>
@@ -101,13 +109,13 @@
                     </div>
                 </div>
                 <div class="call-action text-center">
-                    <i><strong>So, what are you waiting for</strong></i> <a href="#" class="btn btn-lg btn-purple">Get Started Now</a>
+                    <i><strong>So, what are you waiting for?</strong></i> <a href="#" class="btn btn-lg btn-purple">Get Started Now</a>
                 </div>
             </div>
         </section>
         
         <section class="tips">
-            <div class="container">
+            <div class="container hideme">
                 <p>Here are some friendly tips on how you can...</p>
                 <h1>Find Your <strong>Happy Life Partner</strong></h1>
                 <img src="assets/img/graphics/illustration.png" width="600" height="" class="img-responsive"/>
@@ -123,12 +131,165 @@
         </section>
         
         <section class="step_01">
-            <div class="container">
-                <center>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </center>
-            </div>
+            <h2><strong>First:</strong> Realize that you are awesome! And others are too</h2>
+            <section id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-road" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            <strong>Everything starts with you</strong>. You were created unique. Realizing it can be the bravest thing you ever do. It often also is the first step to finding the person you wish to spend the rest of your life with.
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div> 
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            Find <strong>peace</strong> with what you can’t control
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            <strong>Appreciate</strong> what you have
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            Look at the <strong>positive</strong> side of things 
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            <strong>Open your mind</strong> to new things
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+            </section> <!-- cd-timeline -->
             
+            <br/><br/>
+            
+            <h2><strong>Second:</strong> Be Likeable!</h2>
+            <section id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            The measuring stick is how you treat others. <strong>Nobody’s perfect so why should you expect perfection in a partner?</strong> Being likeable not only expands your network to meet more people but also trains you to embrace the strengths and weaknesses of your “perfect” match!
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div> 
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-screenshot" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            Identify other people’s <strong>strengths</strong> and <strong>focus</strong> on it
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            Learn to <strong>listen</strong> and <strong>empathise</strong>
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            Expect nothing but <strong>appreciate</strong> when you’repleasantly surprised
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+                <div class="cd-timeline-block">
+                    <div class="cd-timeline-img">
+                        <span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span>
+                    </div>
+
+                    <div class="cd-timeline-content">
+                        <p  class="text-left">
+                            <strong>Resist the urge to talk</strong> about others without them present
+                        </p>
+                        <span class="cd-date hidden">
+                            <img src="assets/img/graphics/timeline/tm_01.png" class="img-responsive"/>
+                        </span>
+                    </div> 
+                </div>
+                
+            </section> <!-- cd-timeline -->
         </section>
         
         <section class="step">
@@ -136,7 +297,7 @@
         </section>
         
         <section class="step_02">
-            <div class="container">
+            <div class="container hideme">
                 <h2>Enjoy the journey with an <strong>eye on the destination</strong>.</h2>
                 <p>When it comes to finding the love of your life the journey is as important as the destination because quite simply <strong>the journey makes the destination! </strong>If you can’t enjoy your own company then who will?
     </p>
@@ -177,7 +338,7 @@
         </section>
         
         <section class="step_03">
-            <div class="container">
+            <div class="container hideme">
                 <h1>You can’t expect <strong>great things</strong> to happen without effort.</h1>
                 <div class="col-md-7 col-sm-7 col-xs-12">
                     If things are going to happen then it has to start from you. Let go of whatever is outside your control but only <strong>after you make your own destiny with the things you can</strong>. <br/><br/><strong>Take every opportunity to meet people  </strong>and establish what it is you’re looking for in a partner but keep an open mind. <br/><br/><a href="#">Find out more!</a>
@@ -189,6 +350,45 @@
                 </div>
             </div>
         </section>
+        
+        <section class="tl_01">
+            <div class="container hideme">
+                <h1>Have you tried <a href="#">Setipe.com</a>?</h1>
+                <i>Our approach to online dating...</i>
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div class="call_to_action_2">
+                <h4><i>Sign up and get your <strong><u>FREE</u></strong> Personality report</i>&nbsp; <a href="#" class="btn btn-lg btn-purple">Get Started Now</a></h4>
+            </div>
+            <div class="menu_footer">
+                <ul class="list-inline">
+                    <li><a href="#">Learn more</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><img src="assets/img/logo-xs.png"/></li>
+                    <li><a href="#">#SelamatkanJomblo</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <br/>
+                <h3><i>Talk with our Psychologist? <a href="#">(800) 920-9201</a></i></h3>
+            </div>
+            <div class="footer_bottom">
+                <ul class="list-inline">
+                    <li><img src="assets/img/icons/fb.png"/></li>
+                    <li><img src="assets/img/icons/tw.png"/></li>
+                    <li><img src="assets/img/icons/gp.png"/></li>
+                    <li><br/>Copyright 2015 Setipe. All rights reserved.</li>
+                    <li class="hidden-xs"><a href="#">Privacy</a></li>
+                    <li class="hidden-xs"><a href="#">Security</a></li>
+                    <li class="hidden-xs"><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </footer>
         
         <!-- Modal -->
         <div class="video modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -203,5 +403,6 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/lib.js"></script>
     </body>
 </html>
